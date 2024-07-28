@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+	background: url(img/jean.jpg) no-repeat center center/ cover;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 40px 0;
+}
+
+.contenedor{
+	background-color: #fff;
+	width: 80vw;
+	max-width: 600px;
+	min-height: 500px;
+	border-radius: 25px;
+	border: 2px solid black;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+h1{
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+input{
+	width: 80%;
+	height: 50px;
+	font-size: 25px;
+	margin: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	border: 3px solid #404040;
+}
+
+button{
+	width: 150px;
+	height: 60px;
+	padding: 10px;
+	color: #fff;
+	background-color: #1312a8;
+	font-size: 22px;
+	border-radius: 20px;
+	border: none;
+	user-select: none;
+	cursor: pointer;
+
+}
+
+/* Lista de tareas */
+
+#lista-de-tareas{
+	width: 80%;
+	margin-top:20px ;
+}
+
+.tarea{
+	width: 100%;
+	min-height: 70px;
+	font-size: 25px;
+	padding: 10px;
+	margin-top: 10px;
+	color: #fff;
+	background-color: #407ba6;
+	border: 2px solid black;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+/* Tarea Completada */
+
+.tarea.completada{
+	text-decoration: line-through;
+	background-color: black;
+	border: none;
+}
+
+.tarea p{
+	max-width: 350px;
+}
+
+/* Iconos */
+
+i{
+	margin: 5px;
+	padding: 0px;
+	cursor: pointer;
+}
+
+.icono-completar{
+	color: rgb(0,255,0);
+}
+
+.icono-eliminar{
+	color: #fff;
+}
+
+.icono-completar:hover,
+.icono-eliminar:hover{
+	filter: drop-shadow(0 0 10px #fff);
+}
